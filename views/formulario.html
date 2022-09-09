@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/formulario.css">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <title>Formulario usuarios</title>
+</head>
+<body>
+    <header>
+        <section class="header-principal">
+            <section class="seccion-header">
+                <picture   class="seccion-imagen" href="#">
+                    <a href="#"><img src="/img/logo.png" class="logo" alt="logo-friendogs"></a>
+                </picture>
+                <div class="form">
+                    <div class="input"> Buscar productos, marcas y más</div>
+                    <div class="submit"><i class="fas fa-search"></i></div>
+                </div>
+                <nav class="navbar-usuario">
+                    <a href="#"> <img src="/img/iconos/user.png" class="iconos" alt="Imagen-usuario"> Perfil</a>
+                    <a href="#"> <img src="/img/iconos/salida.png" class="iconos" alt="Imagen-usuario">Salir</a>
+                </nav>
+            </section>
+            <section>
+                <nav class="navbar-opciones">
+                    <a href="#" >Productos</a>
+                    <a href="#" >Promociones</a>
+                    <a href="#" >Login</a>
+                    <a href="#"><img src="/img/iconos/compras.png" class="carrito"></img></a>
+                </nav>
+            </section>
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>   
+        </section> 
+    </header>
+    <main>
+        <h1 class="titulo"> Formulario de registro</h1>
+        <div class="container-texto">
+            <p class="texto"> Completa todos los datos, importante para el registro en MercadoLiebre</p>
+        </div>
+        <form action="registro" method="get" class="formulario" >
+            <section class="formulario-usuario">
+                <label for="usuario" class="nombre">Nombre </label>
+                <input type="text" name="nombre" id="usuario" placeholder="Ej. Liebre Andres" class="input-nombre">
+
+                <label for="email" class="email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="Ej. liebre@hotmail.com" class="input-email">
+
+                <label for="contraseña" class="contraseña">Contraseña</label>
+                <input type="password" name="contraseña" id="contraseña" required class="input-contraseña" >
+
+                <label for="repetir-contraseña" class="contraseña">Repetir Contraseña</label>
+                <input type="password" name="repetir-contraseña" id="repetir-contraseña" required  class="input-contraseña" >
+
+                <label for="numero" class="telefono">Numero Telefonico</label>
+                <input type="tel" name="numero" id="numero" placeholder="(+57) 3214789654" class="input-telefono">
+
+                <label for="imagen-usuario" class="imagen">Imagen usuario</label>
+                <input type="file" id="imagen-usuario" name="imagen-usuario" placeholder="ingrese una imagen" class="input-imagen">
+
+                <label for="pais-nacimiento" class="pais">Pais de nacimiento</label>
+                <select name="pais-nacimiento" id="pais-nacimiento" class="input-pais">
+                    <option value="option" selected> Elegir </option>
+                    <option value="Arg"> Argentina </option>
+                    <option value="Col"> Colombia </option>
+                    <option value="Per"> Peru </option>
+                    <option value="Ven"> Venezuela </option>
+                    <option value="Urg"> Uruguay </option>
+                    <option value="Bra"> Brasil </option>
+                    <option value="Chi"> Chile </option>
+                    <option value="Par"> Paraguay </option>
+                    <option value="Bol"> Bolivia </option>
+                    <option value="Ecu"> Ecuador </option>
+                </select>
+
+                <label for="tipo-usuario" class="usuario">Tipo Usuario</label>
+                <select name="tipo-usuario" id="tipo-usuario" class="input-usuario">
+                    <option value="option" checked> Elegir </option>
+                    <option value="administrador"> Administrador </option>
+                    <option value="vendedor"> Vendedor </option>
+                    <option value="comprador"> Comprador </option>
+                </select>
+                
+                <div class="botones">
+                    <button type="submit" class="boton-enviar"> Enviar </button>
+                    <button type="reset" class="boton-borrar"> Borrar </button>
+                </div>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <section class="contenedor-footer">
+            <picture  href="#" class="picture-footer">
+                <a href="#"><img src="/img/logo.png" class="logo-footer" alt="logo-friendogs"></a>
+            </picture>
+                    <div class="seccion-footer-2">
+                        <h2 class="title-footer">Somos Friendogs</h2>
+                        <a href="#">Terminos Y Condiciones</a>
+                        <a href="#">Trabaja Con Nosotros</a>
+                        <a href="#">Politicas De Entrega</a>
+                        <a href="#">Politicas De Privacidad</a>
+                    </div>
+                    <div class="seccion-footer-3">
+                        <h2 class="title-footer">Informacion</h2>
+                        <a href="#">Blog DogFriendly</a>
+                        <a href="#">Contactanos</a>
+                        <a href="#">Sucursales</a>
+                        <a href="#">dudas@dogfriendly.com</a>
+                    </div>
+                    <div class="seccion-footer-4">
+                        <h2 class="title-footer">Redes Sociales</h2>
+                        <a href="#"><img src="/img/iconos/facebook.png" alt="Facebook" class="icono-footer"> Facebook</a>
+                        <a href="#"><img src="/img/iconos/youtube.png" alt="youtube" class="icono-footer"> Youtube</a>
+                        <a href="#"><img src="/img/iconos/instagram.png" alt="instagram" class="icono-footer"> Instagram</a>  
+                    </div>
+        </section>
+            <div class="seccion-copyright">
+                <hr>
+                <p class="text-copyright">Todos los derechos reservados © 2021
+                <b> dogfriendly Society.</b></p>
+            </div>
+    </footer>
+</body>
+</html>
